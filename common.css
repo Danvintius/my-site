@@ -1,0 +1,23 @@
+body {
+font-family: Arial;
+background-color: green;
+margin: 0;
+}
+
+header {
+color: yellow;
+font-family: Cambria;
+background-color: pink;
+border-style: solid;
+margin: 0;
+}
+
+header a {
+text-decoration: none;
+}
+
+footer {
+background-color: blue;
+border-style: solid;
+margin-top: 300px;
+}

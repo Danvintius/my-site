@@ -1,0 +1,43 @@
+body {
+font-family: Arial;
+background-color: green;
+margin: 0;
+}
+
+.part {
+font-style: italic;
+}
+
+.cover {
+float: left;
+width: 260px;
+}
+
+.summary {
+font-family: Calibri;
+margin-left: 120px;
+padding-left: 120px;
+}
+
+.details {
+font-family: Verdana;
+font-style: normal;
+}
+
+.details li {
+font-family: Arial;
+font-style: normal;
+}
+
+
+a {
+text-decoration: none;
+}
+
+.book2 {
+margin-left: 150px;
+}
+
+figure {
+margin-left: 0px;
+}
