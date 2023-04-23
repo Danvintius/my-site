@@ -7,13 +7,18 @@ margin: 0;
 header {
 color: yellow;
 font-family: Cambria;
-background-color: pink;
+background-color: grey;
 border-style: solid;
 margin: 0;
 }
 
 header a {
 text-decoration: none;
+}
+
+.time {
+text-align: right;
+color: black;
 }
 
 footer {
