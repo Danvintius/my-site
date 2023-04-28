@@ -18,7 +18,7 @@ document.write(d.toLocaleString());
 </div>
 <nav>
 <a href="Тест.htm">ГЛАВНАЯ</a>
-<a href="Об авторе.htm">ОБ АВТОРЕ</a> 
+<a href="Об_авторе.htm">ОБ АВТОРЕ</a> 
 <a href="Пустой_трон.htm">ПУСТОЙ ТРОН</a>
 <a href="Центральноградские_сыщики.htm">ЦЕНТРАЛЬНОГРАДСКИЕ СЫЩИКИ</a>
 <a href="Планы.htm">ПЛАНЫ</a>
@@ -37,8 +37,23 @@ document.write(d.toLocaleString());
 <li>Дата выпуска: 6 декабря 2021 г.</li>
 <li>Возрастное ограничение: 18+</li>
 <br>
-<h2 class="part">Часть II</h2>
-Готовится к публикации.
+<h2 class="part2">Часть II</h2>
+<p>Готовится к публикации.</p>
+<script>
+let part2 = document.querySelector('.part2');
+if (part2.onmouseover()) {
+document.write("Подробности будут");
+}
+</script>
+<script src="main.js"></script>
+<h2>Новости</h2>
+<div>
+<p class="news1>
+<script>
+News(news1);
+</script>
+</p>
+</div>
 <footer>
 <div class="container">
  <h1 class="inner-heading">Подпишитесь на нашу рассылку</h1>
@@ -51,6 +66,5 @@ document.write(d.toLocaleString());
 <button class="button subscription-button" type="submit">Подписаться</button>
 </form>
 </footer>
-<script src="main.js"></script>
 </body>
 </html>

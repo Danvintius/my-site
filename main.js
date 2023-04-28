@@ -14,3 +14,8 @@ form.onsubmit = function(evt) {
   // Измените значение textContent на следующей строке
   message.textContent = 'Send to ' + email.value;
 };
+
+let news1 = document.querySelector('.news1');
+function News() {
+document.write("Первая новость");
+}
