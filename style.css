@@ -14,9 +14,9 @@ width: 260px;
 }
 
 .summary {
-font-family: Calibri;
-margin-left: 120px;
-padding-left: 120px;
+font-family: Times New Roman, fantasy;
+border: 1px solid orange;
+background-color: yellow;
 }
 
 .details {
@@ -40,4 +40,59 @@ margin-left: 150px;
 
 figure {
 margin-left: 0px;
+}
+
+section {
+border: 5px solid orange;
+height: auto;
+}
+
+.book-flex {
+display: flex;
+}
+
+.title {
+text-align: center;
+font-size: 30px;
+border: 5px solid orange;
+text-transform: uppercase;
+}
+
+.cd {
+    background-color: #E0B0FF;
+    border: 5px solid #E0B0FF;
+    margin-bottom: 5px;
+}
+
+.cd a {
+    color: blue;
+}
+
+.aside {
+    background-color: aquamarine;
+    text-align: center;
+    width: 150px;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.aside-bottom {
+    border-top: 1px solid orange;
+}
+
+.content {
+    width: 100%;
+}
+
+.details-container {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
 }
