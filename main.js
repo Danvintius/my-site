@@ -24,11 +24,26 @@ const btn = document.querySelector('.free-fragment');
 const counter = document.querySelector('.counter')
 btn.onclick = function() {
   console.log("Нажали");
-  window.alert('Бесплатный фрагмент');
   counter.textContent++;
+  document.location = 'Заговор_котов_фрагмент.htm';
 }
 
 const btnBought = document.querySelector('.bought')
 btnBought.onclick = function() {
-  document.location = 'Об_авторе.htm'
+  document.location = 'Об_авторе.htm';
+}
+
+const content = document.querySelector('.content')
+const iframe = document.querySelector('.content-content')
+content.onclick = function() {
+  iframe.style.display = 'block';
+}
+
+const wiki = document.querySelector('.wiki-link')
+wiki.onclick = function() {
+  if (window.confirm("Перейти на другой сайт?")) {
+    return;
+  } else {
+    wiki.setAttribute("href"," ");
+  }
 }
