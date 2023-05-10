@@ -6,6 +6,7 @@
 <link href="common.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
 </head>
+<script src="jquery-3.6.4.min.js"></script>
 <body class="page light-theme">
 <header>
 <div class="header-top">
@@ -47,8 +48,8 @@ document.write(d.toLocaleString());
 </div>
 <div class="aside">
     <div class="buttons">
-    <button class="content">Оглавление</button>
-    <iframe src="Пустой_трон_1_оглавление.htm" class = "content-content" width="200" height="60">
+    <button class="content" id="et-content">Оглавление</button>
+    <iframe src="Пустой_трон_1_оглавление.htm" class = "iframe-none content-content"  width="200" height="60">
     </iframe>
     <button class="free-fragment" id="free-fragment">Читать бесплатный фрагмент</button>
     <p style="font-size: 10px">Бесплатный фрагмент прочитали <span class="counter">0</span> человек</p>
@@ -83,6 +84,11 @@ document.write(d.toLocaleString());
 </section>
 </main>
 <script src="main.js"></script>
+<script>
+    $("#et-content").click (function() {
+    $(".et1").toggleClass("et-content-style");
+});
+</script>
 <h2>Новости</h2>
 <footer>
 <div class="container">

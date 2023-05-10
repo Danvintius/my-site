@@ -36,7 +36,22 @@ btnBought.onclick = function() {
 const content = document.querySelector('.content')
 const iframe = document.querySelector('.content-content')
 content.onclick = function() {
-  iframe.style.display = 'block';
+iframe.classList.toggle('iframe-block');
+iframe.classList.toggle('iframe-none');
+}
+
+const content2 = document.querySelector('.content2')
+const iframe2 = document.querySelector('.content-content2')
+content2.onclick = function() {
+iframe2.classList.toggle('iframe-block');
+iframe2.classList.toggle('iframe-none');
+}
+
+const content3 = document.querySelector('.content3')
+const iframe3 = document.querySelector('.content-content3')
+content3.onclick = function() {
+iframe3.classList.toggle('iframe-block');
+iframe3.classList.toggle('iframe-none');
 }
 
 const wiki = document.querySelector('.wiki-link')
