@@ -1,9 +1,20 @@
-let page = document.querySelector('.page');
+let body = document.querySelector('body');
 let themeButton = document.querySelector('.theme-button');
+let flex = document.querySelector('.book-flex');
+let summary = document.querySelector('.summary');
+let aside = document.querySelector('.aside');
+let title = document.querySelector('.title');
 themeButton.onclick = function() {
-  page.classList.toggle('light-theme');
-  page.classList.toggle('dark-theme');
-};
+  body.classList.toggle('dark-theme');
+  darkFlex();
+}
+
+function darkFlex() {
+  title.classList.toggle('dark-theme');
+  flex.classList.toggle('dark-theme');
+  summary.classList.toggle('dark-theme');
+  aside.classList.toggle('dark-theme-gray');
+}
 
 let message = document.querySelector('.subscription-message');
 let form = document.querySelector('.subscription');
@@ -46,6 +57,7 @@ content2.onclick = function() {
 iframe2.classList.toggle('iframe-block');
 iframe2.classList.toggle('iframe-none');
 }
+
 
 const content3 = document.querySelector('.content3')
 const iframe3 = document.querySelector('.content-content3')

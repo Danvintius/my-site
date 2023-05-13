@@ -24,7 +24,7 @@ document.write(d.toLocaleString());
 <a href="Пустой_трон.htm">ПУСТОЙ ТРОН</a>
 <a href="Центральноградские_сыщики.htm">ЦЕНТРАЛЬНОГРАДСКИЕ СЫЩИКИ</a>
 <a href="Планы.htm">ПЛАНЫ</a>
-<a href="https://stepanov.fandom.com/ru/" class="wiki-link">ВИКИ</a>
+<a href="https://stepanov.fandom.com/ru/" id="wiki-link">ВИКИ</a>
 </nav>
 </header>
 <main>
@@ -85,8 +85,14 @@ document.write(d.toLocaleString());
 </main>
 <script src="main.js"></script>
 <script>
-    $("#et-content").click (function() {
+$("#et-content").click (function() {
     $(".et1").toggleClass("et-content-style");
+});
+$(".theme-button").click (function() {
+    $(".et2").toggleClass("dark-theme");
+});
+$(".theme-button").click (function() {
+    $(".dh").toggleClass("dark-theme");
 });
 </script>
 <h2>Новости</h2>

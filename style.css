@@ -110,9 +110,22 @@ iframe {
     background-color: red;
 }
 
-@media (max-width: 768px) {
+.dark-theme {
+    color: white;
+    background-color: rgb(32, 27, 27);
+}
+
+.dark-theme-gray {
+    background-color: gray;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
     section {
         display: flex;
         flex-direction: column;
+    }
+
+    .et1 {
+        background-color: red;
     }
 }

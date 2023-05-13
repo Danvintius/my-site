@@ -41,12 +41,18 @@ color: black;
 background-color: beige;
 border: 1px solid black;
 margin-right: 5px;
+padding: 0 3px 0 3px;
 }
 
 footer {
 background-color: blue;
 border-style: solid;
 margin-top: 300px;
+}
+
+.dark-theme {
+    color: white;
+    background-color: rgb(32, 27, 27);
 }
 
 @media (max-width: 768px) {
