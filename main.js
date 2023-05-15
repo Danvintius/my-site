@@ -31,39 +31,31 @@ function News() {
 document.write("Первая новость");
 }
 
-const btn = document.querySelector('.free-fragment');
-const counter = document.querySelector('.counter')
+const btn = document.querySelector('.free-fragment-cd');
+const counter = document.querySelector('.counter-cd')
 btn.onclick = function() {
   console.log("Нажали");
   counter.textContent++;
-  document.location = 'Заговор_котов_фрагмент.htm';
+  document.location = 'Заговор_котов_фрагмент.md';
+}
+
+const btnCd2 = document.querySelector('.free-fragment-cd2');
+const counterCd2 = document.querySelector('.counter-cd2')
+btnCd2.onclick = function() {
+  counterCd2.textContent++;
+  document.location = 'Новый_враг_фрагмент.md';
+}
+
+const btnCd3 = document.querySelector('.free-fragment-cd3');
+const counterCd3 = document.querySelector('.counter-cd3')
+btnCd3.onclick = function() {
+  counterCd3.textContent++;
+  document.location = 'Царский_меч_фрагмент.md';
 }
 
 const btnBought = document.querySelector('.bought')
 btnBought.onclick = function() {
   document.location = 'Об_авторе.htm';
-}
-
-const content = document.querySelector('.content')
-const iframe = document.querySelector('.content-content')
-content.onclick = function() {
-iframe.classList.toggle('iframe-block');
-iframe.classList.toggle('iframe-none');
-}
-
-const content2 = document.querySelector('.content2')
-const iframe2 = document.querySelector('.content-content2')
-content2.onclick = function() {
-iframe2.classList.toggle('iframe-block');
-iframe2.classList.toggle('iframe-none');
-}
-
-
-const content3 = document.querySelector('.content3')
-const iframe3 = document.querySelector('.content-content3')
-content3.onclick = function() {
-iframe3.classList.toggle('iframe-block');
-iframe3.classList.toggle('iframe-none');
 }
 
 const wiki = document.querySelector('.wiki-link')

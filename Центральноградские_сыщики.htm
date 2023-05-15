@@ -57,11 +57,11 @@ document.write(d.toLocaleString());
     </div>
     <div class="aside">
         <div class="buttons">
-        <button class="content">Оглавление</button>
-        <iframe src="Заговор_котов_оглавление.htm" class = "iframe-none content-content" width="200" height="60">
+        <button class="content content-cd">Оглавление</button>
+        <iframe src="Заговор_котов_оглавление.htm" class = "iframe-none content-content-cd" width="200" height="60">
          </iframe>
-        <button class="free-fragment" id="free-fragment">Читать бесплатный фрагмент</button>
-        <p style="font-size: 10px">Бесплатный фрагмент прочитали <span class="counter">0</span> человек</p>
+        <button class="free-fragment free-fragment-cd">Читать бесплатный фрагмент</button>
+        <p style="font-size: 10px">Бесплатный фрагмент прочитали <span class="counter-cd">0</span> человек</p>
         <button href="Пустойтрон.txt" class="bought" style="width: 100%">Купить</button>
         </div>
         <div class="aside-bottom">Комментарии</div>
@@ -98,8 +98,8 @@ document.write(d.toLocaleString());
         <button class="content content2">Оглавление</button>
         <iframe src="Новый_враг_оглавление.htm" class ="iframe-none content-content2" width="200" height="60">
         </iframe>
-        <button class="free-fragment" id="free-fragment">Читать бесплатный фрагмент</button>
-        <p style="font-size: 10px">Бесплатный фрагмент прочитали <span class="counter">0</span> человек</p>
+        <button class="free-fragment free-fragment-cd2">Читать бесплатный фрагмент</button>
+        <p style="font-size: 10px">Бесплатный фрагмент прочитали <span class="counter-cd2">0</span> человек</p>
         <button href="Об_авторе.htm" class="bought" style="width: 100%">Купить</button>
         </div>
         <div class="aside-bottom">Комментарии</div>
@@ -136,8 +136,8 @@ document.write(d.toLocaleString());
         <button class="content content3">Оглавление</button>
         <iframe src="Царский_меч_оглавление.htm" class ="iframe-none content-content3" width="200" height="60">
         </iframe>
-        <button class="free-fragment" id="free-fragment">Читать бесплатный фрагмент</button>
-        <p style="font-size: 10px">Бесплатный фрагмент прочитали <span class="counter">0</span> человек</p>
+        <button class="free-fragment free-fragment-cd3">Читать бесплатный фрагмент</button>
+        <p style="font-size: 10px">Бесплатный фрагмент прочитали <span class="counter-cd3">0</span> человек</p>
         <button href="Об_авторе.htm" class="bought" style="width: 100%">Купить</button>
         </div>
         <div class="aside-bottom">Комментарии</div>
@@ -145,5 +145,26 @@ document.write(d.toLocaleString());
 </section>
 </main>
 <script src="main.js"></script>
+<script>
+const contentCd = document.querySelector('.content-cd')
+const iframeCd = document.querySelector('.content-content-cd')
+contentCd.onclick = function() {
+iframeCd.classList.toggle('iframe-block');
+iframeCd.classList.toggle('iframe-none');
+}
+const content2 = document.querySelector('.content2')
+const iframe2 = document.querySelector('.content-content2')
+content2.onclick = function() {
+iframe2.classList.toggle('iframe-block');
+iframe2.classList.toggle('iframe-none');
+}
+
+const content3 = document.querySelector('.content3')
+const iframe3 = document.querySelector('.content-content3')
+content3.onclick = function() {
+iframe3.classList.toggle('iframe-block');
+iframe3.classList.toggle('iframe-none');
+}
+</script>
 </body>
 </html>

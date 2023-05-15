@@ -48,11 +48,11 @@ document.write(d.toLocaleString());
 </div>
 <div class="aside">
     <div class="buttons">
-    <button class="content" id="et-content">Оглавление</button>
-    <iframe src="Пустой_трон_1_оглавление.htm" class = "iframe-none content-content"  width="200" height="60">
+    <button class="content content-et" id="et-content">Оглавление</button>
+    <iframe src="Пустой_трон_1_оглавление.htm" class = "iframe-none content-content content-content-et"  width="200" height="60">
     </iframe>
-    <button class="free-fragment" id="free-fragment">Читать бесплатный фрагмент</button>
-    <p style="font-size: 10px">Бесплатный фрагмент прочитали <span class="counter">0</span> человек</p>
+    <button class="free-fragment free-fragment-et">Читать бесплатный фрагмент</button>
+    <p style="font-size: 10px">Бесплатный фрагмент прочитали <span class="counter-et">0</span> человек</p>
     <button href="Об_авторе.htm" class="bought" style="width: 100%">Купить</button>
     </div>
     <div class="aside-bottom">Комментарии</div>
@@ -85,6 +85,25 @@ document.write(d.toLocaleString());
 </main>
 <script src="main.js"></script>
 <script>
+const btnEt = document.querySelector('.free-fragment-et');
+const counterEt = document.querySelector('.counter-et')
+btnEt.onclick = function() {
+  console.log("Нажали")
+  if (window.confirm("Вам есть 18 лет?")) {
+//  counterEt.textContent++;
+  document.location = 'Пустой_трон_1_фрагмент.md';
+  } else {
+    return;
+  }
+}
+
+const content = document.querySelector('.content-et')
+const iframe = document.querySelector('.content-content-et')
+content.onclick = function() {
+iframe.classList.toggle('iframe-block');
+iframe.classList.toggle('iframe-none');
+}
+
 $("#et-content").click (function() {
     $(".et1").toggleClass("et-content-style");
 });
