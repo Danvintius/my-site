@@ -1,9 +1,10 @@
 let body = document.querySelector('body');
 let themeButton = document.querySelector('.theme-button');
-let flex = document.querySelector('.book-flex');
-let summary = document.querySelector('.summary');
-let aside = document.querySelector('.aside');
+let flex = document.querySelectorAll('.book-flex');
+let summary = document.querySelectorAll('.summary');
+let aside = document.querySelectorAll('.aside');
 let title = document.querySelector('.title');
+let descr = document.querySelector('.series-description')
 themeButton.onclick = function() {
   body.classList.toggle('dark-theme');
   darkFlex();
@@ -11,9 +12,16 @@ themeButton.onclick = function() {
 
 function darkFlex() {
   title.classList.toggle('dark-theme');
-  flex.classList.toggle('dark-theme');
-  summary.classList.toggle('dark-theme');
-  aside.classList.toggle('dark-theme-gray');
+  descr.classList.toggle('dark-theme');
+  for (let i = 0; i < flex.length; i++) {
+  flex[i].classList.toggle('dark-theme');
+  }
+  for (let i = 0; i < summary.length; i++) {
+  summary[i].classList.toggle('dark-theme');
+  }
+  for (let i = 0; i < aside.length; i++) {
+  aside[i].classList.toggle('dark-theme-gray');
+  }
 }
 
 let message = document.querySelector('.subscription-message');
@@ -55,7 +63,7 @@ btnCd3.onclick = function() {
 
 const btnBought = document.querySelector('.bought')
 btnBought.onclick = function() {
-  document.location = 'Об_авторе.htm';
+  document.location = 'Магазин.htm';
 }
 
 const wiki = document.querySelector('.wiki-link')

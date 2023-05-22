@@ -119,6 +119,21 @@ iframe {
     background-color: gray;
 }
 
+.title-et {
+    background-color: rgb(231, 87, 87); 
+    border:rgb(231, 87, 87); 
+    padding-top: 5px;
+}
+
+.title-cd {
+    background-color: rgb(78, 124, 9); border: none
+}
+
+.series-description {
+    text-align: center; 
+    background-color: greenyellow;
+}
+
 @media (min-width: 480px) and (max-width: 768px) {
     section {
         display: flex;
