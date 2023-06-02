@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Пустой трон</title>
+<meta charset="utf">
+</head>
+<body>
+<main>
+<div style="text-align: center"><i>Все книги продаются в формате pdf</i></div>
+<div class="books-bought-flex">
+    <div class="book-bought">
+        <span class="book-title">Заговор котов</span>
+        <figure>
+            <img src="https://store.ridero.ru/images/w350?bucket=yc:store-raw-data.ridero.store&key=ridero/sku/2019-07/5d19c34a1c171400072c42bd/rev.2022-03-21T12:44:00.667Z/cover-front.png&format=original" width="150" height="200">
+        </figure>
+        200 р.
+        <button href="Пустойтрон.txt" class="buy" style="width: 100%">Купить</button>
+    </div>
+    <div class="book-bought">
+        <span class="book-title">Новый враг</span>
+        <figure>
+            <img src="https://store.ridero.ru/images/w350?bucket=yc:store-raw-data.ridero.store&key=ridero/sku/2019-07/5d26d37c44a5550008dbb3e7/rev.2022-08-28T21:23:36.990Z/cover-front.png&format=original" width="150" height="200">
+        </figure>
+        200 р.
+        <button class="buy" style="width: 100%">Купить</button>
+    </div>
+    <div class="book-bought">
+        <span class="book-title">Царский меч</span>
+        <figure>
+            <img src="https://store.ridero.ru/images/w350?bucket=yc:store-raw-data.ridero.store&key=ridero/sku/2019-10/5da59b654c0973000653e4f2/rev.2022-08-28T08:00:31.149Z/cover-front.png&format=original" width="150" height="200">
+        </figure>
+        200 р.
+        <button href="Пустойтрон.txt" class="buy" style="width: 100%">Купить</button>
+    </div>
+    <div class="book-bought">
+        <span class="book-title" style="font-size: 10px;">Центральноградские сыщики</span>
+        <figure>
+            <img src="https://store.ridero.ru/images/w350?bucket=yc:store-raw-data.ridero.store&key=ridero/sku/2019-10/5dba7314973c2c0007b34ce9/rev.2022-08-28T05:25:23.309Z/cover-front.png&format=original" width="150" height="200">
+        </figure>
+        200 р.
+        <button class="buy" style="width: 100%">Купить</button>
+    </div>
+    <div class="book-bought">
+        <span class="book-title">Пустой трон. Часть I</span>
+        <figure>
+            <img src="https://store.ridero.ru/images/w350?bucket=yc:store-raw-data.ridero.store&key=ridero/sku/2021-12/61ade8e540fe95fbfcf27f3b/rev.2022-07-30T04:46:50.215Z/cover-front.png&format=original" width="150" height="200">
+        </figure>
+        200 р.
+        <button class="buy" style="width: 100%">Купить</button>
+    </div>
+</div>
+</main>
+<style>
+    .books-bought-flex {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .book-bought {
+    width: 50%;
+    border: 1px solid orange;
+    text-align: center;
+}
+    img {
+        width: 90%;
+    }
+    .book-bought:nth-child(1) {
+        width: 45%;
+    }
+    .book-bought:nth-child(2) {
+        width: 45%;
+    }
+    .book-bought:nth-child(3) {
+        width: 45%;
+    }
+    .book-bought:nth-child(4) {
+        width: 45%;
+    }
+</style>
+<script src="main.js"></script>
+<script>
+const buy = document.querySelectorAll('.buy')
+for (let i = 0; i < buy.length; i++) {
+    buy[i].onclick = function() {
+      document.location = 'Магазин.htm#footer';
+      console.log("Нажали")
+    }
+}
+</script>
+</body>
+</html>
